@@ -1,7 +1,18 @@
-# Stock broker simulator
+# Stock Broker Simulator
 
-Mimics trades that occur in a stock market by pulling current stock prices and using a trade schedule. Parses a csv file that holds the schedule of trades requested to be performed, as well as the number of stock traders we have (including their individual budgets). After ensuring accurate parsing of both files the individual stock brokers work together to try and complete as many trades in the schedule as possible to maximize their collective stock portfolio. The sequence of trades preformed by individual stock brokers will be listed in the clients respective console.
+A simulation of stock market trading where multiple brokers execute trades based on a predefined schedule to maximize their collective portfolio value. The system pulls current stock prices from the FINNHUB API and parses trade schedules to mimic real-world trading scenarios.
 
-Additionally, in order to collect the current price of each stock, I pull real data from FINNHUB API.
+## Overview
 
-Topics: networking, multi-threading, concurrency issues, API Querying.
+This project simulates stock market trading by:
+
+- Parsing CSV files containing trade schedules and trader budgets
+- Retrieving current stock prices
+- Simulating trades among multiple brokers to maximize their collective portfolio value
+
+## Features
+
+- **CSV Parsing**: Reads and processes trade schedules and trader information.
+- **Stock Price Retrieval**: Fetches current stock prices for accurate trading simulations.
+- **Trade Execution**: Simulates trade execution based on predefined schedules.
+- **Portfolio Management**: Tracks and updates the collective portfolio value of brokers.
